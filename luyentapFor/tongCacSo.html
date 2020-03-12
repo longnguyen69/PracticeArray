@@ -2,9 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    //Nhap vao hai so a, b
+    let a = +prompt("nhap vao so thu nhat:");
+    let b = +prompt("nhap vao so thu hai: ");
+    let sum = 0;
+    for (let i = a; i <= b; i++)// thêm trường hợp a<b;
+        if (i % 2 == 0){
+        sum += i;
+        }
+    alert("tong cac so tu " + a + " den " + b + " la: " + sum);
+</script>
 </body>
 </html>

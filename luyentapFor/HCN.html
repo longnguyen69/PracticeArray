@@ -2,9 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let cd = +prompt("chieu dai: ");
+    let cr = +prompt("chieu rong: ");
+    let i, j;
+    for (i = 1; i <= cr; i++) {
+        for (j = 1; j <= cd; j++) {
+            if (i === 0 || j === 0 || i === cr - 1 || j === cd - 1){
+                document.write("*");
+            } else{
+                document.write("&nbsp;");
+            }
+        }
+        document.write("<br>");
+    }
+</script>
 </body>
 </html>
