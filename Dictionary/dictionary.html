@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>nhập từ cần tra cứu: <input id="import"></p>
+<button id="clicked" onclick="tranSlate()">Dịch Từ</button>
+<p id="result"></p>
+<script>
+    function tranSlate() {
+        let arrEnglish = ["hello", "what", "why", "when", "go", "do", "house"];
+        let arrVietnamese = ["xin chào", "cái gì", "tại sao", "khi nào", "đi", "làm", "ngôi nhà"];
+        let inputText = document.getElementById('import').value;
+        for (let i = 0; i < arrEnglish.length; i++) {
+            if (inputText === arrEnglish[i]) {
+                console.log(inputText);
+                document.getElementById('result').innerHTML = arrVietnamese[i];
+            }
+            alert('No answer found');
+            break;
+        }
+    }
+</script>
+</body>
+</html>

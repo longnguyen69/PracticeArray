@@ -30,9 +30,9 @@
 <script>
     function genTables() {
         let str = '';
-        for (let i = 1; i <= 9; i++) {
+        for (let i = 1; i <= 20; i++) {
             str += "<tr>";
-            for (let j = 1; j <= 9; j++) {
+            for (let j = 1; j <= 30; j++) {
 
                 str += '<td onclick="clickCell(this)"></td>';
             }
@@ -43,7 +43,6 @@
 
     genTables();
     let turn = 1;
-
     function clickCell(cell) {
         if (cell.innerHTML === '') {
             if (turn === 1) {
@@ -55,6 +54,7 @@
             }
         }
     }
+
 </script>
 </body>
 </html>
