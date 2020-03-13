@@ -6,13 +6,14 @@
 </head>
 <body>
 <script>
-    let a = +prompt("nhap so muon chia");
-    let result = a[0];
+    let num = prompt("nhap so muon chia");
+    let a = num.toString();
+    let result = [a[0]];
     for (let i = 1; i < a.length; i++) {
-        if ((parseInt(a[i - 1]) % 2 === 0) && (parseInt(a[i]) % 2 === 0)) {
+        if (a[i - 1] % 2 === 0 && a[i] % 2 === 0) {
             result.push('-', a[i]);
         } else {
-            result = a[i];
+            result.push(a[i]);
         }
     }
     console.log(result.join(''));
